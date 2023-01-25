@@ -10,7 +10,6 @@ struct Point
 
 int main()
 {
-
   // 点の入力部
   struct Point points[10];
   int n;
@@ -38,10 +37,6 @@ int main()
     if (distance > max_distance)
     {
       max_distance = distance;
-      int max_distance_x = points[i].x;
-      printf("xの値は(%d)\n", max_distance_x);
-      int max_distance_y = points[i].y;
-      printf("yの値は(%d)\n", max_distance_y);
     }
 
     // 最大値を与える、x,yを出力
@@ -54,8 +49,8 @@ int main()
     // printf("yの値は(%d)\n", max_distance_y);
   }
   // ここには代入できている
-  printf("xの値は(%d)\n", points[i].x);
-  printf("yの値は(%d)\n", points[i].y);
+  // printf("xの値は(%d)\n", points[i].x);
+  // printf("yの値は(%d)\n", points[i].y);
 
   // 原点からの距離を小数点以下切り捨てした
   int max_distance_integer = floor(max_distance);
@@ -64,7 +59,6 @@ int main()
   printf("最大値のときのyの値は(%d)\n", points[i].y);
   // 最も遠い点を出力
   printf("max_distance_integerの中身は(%d)\n", max_distance_integer);
-  // printf("The most distant point is (%d, %d)", max_distance_x, max_distance_y);
 
   return 0;
 }
