@@ -39,18 +39,7 @@ int main()
       max_distance = distance;
     }
 
-    // 最大値を与える、x,yを出力
-    // この変数には代入できてる
-    // printf("xの値は(%d)\n", points[i].x);
-    // printf("yの値は(%d)\n", points[i].y);
-
-    // この変数に代入できてない(意味のわからない値が代入されている)
-    // printf("xの値は(%d)\n", max_distance_x);
-    // printf("yの値は(%d)\n", max_distance_y);
   }
-  // ここには代入できている
-  // printf("xの値は(%d)\n", points[i].x);
-  // printf("yの値は(%d)\n", points[i].y);
 
   // 原点からの距離を小数点以下切り捨てした
   int max_distance_integer = floor(max_distance);
